@@ -1,10 +1,9 @@
 $(document).ready(function(){
-p2b();
+
 });
-function p2b(){
-  i=50;-50
-  do {
-    $('#box3').append('<br>'+i);
-    i -=10;
-  }while(i>0);
-}
+minitablica = Array('test1','test2');
+tablica = Array('Johny','Bruno','Jolka',54,'Teścik',minitablica);
+$.each(tablica,function(k,v){
+  console.log('Dla klucza '+k+' mamy wartość');
+  console.log(tablica[k]);
+})
