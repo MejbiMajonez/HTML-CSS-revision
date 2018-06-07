@@ -1,13 +1,10 @@
 $(document).ready(function(){
-wypis2();
+wypis3();
 });
-function wypis2(){
- var jajko = "Stefan"
- var kutaz = "John"
- var jajebe = "39"
-
-  $("#imie").html(jajko);
-  $("#imie2").html(kutaz);
-  $('.wiek').html(jajebe);
+function wypis3(){
+ var kutaz = "Stefan"
+ var z1 = 10;
+ var z2 = 21;
+ $('.tescik').html('Mam na imie '+kutaz+'. I mam '+(z1+z2)+' lat');
 
 }
