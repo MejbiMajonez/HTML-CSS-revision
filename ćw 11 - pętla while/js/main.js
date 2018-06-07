@@ -1,8 +1,10 @@
 $(document).ready(function(){
-p1();
+p2();
 });
-function p1(){
-  for(i=1;i<=9;i++){
-    $('#box').append('<br>'+i);
+function p2(){
+  i=50;
+  while (i>0){
+    $('#box2').append('<br>'+i);
+    i -=1;
   }
 }
