@@ -1,0 +1,18 @@
+.minicircle {
+  width: 200px;
+  height: 200px;
+  background-color: #86c5bd;
+  border-radius: 50%;
+  position: fixed;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 1px;
+  }
+
+}
