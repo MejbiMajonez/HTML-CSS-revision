@@ -4,8 +4,15 @@ $(document).ready(function () {
 });
 
 function go_kwadracik() {
+  grafika();
   rusz_mnie();
   boom();
+
+}
+//grafika na starcie
+function grafika(){
+  $('#dupa').addClass("grafika");
+  setTimeout(function schowaj(){$(".grafika").fadeOut(3000);},5000);
 
 }
 //poruszanie się kwadracika
