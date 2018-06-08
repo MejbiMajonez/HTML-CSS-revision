@@ -8,6 +8,7 @@ function go_kwadracik() {
   rusz_mnie();
   boom();
   zmien_size();
+  takise();
   szybciej();
   chlopek();
 }
