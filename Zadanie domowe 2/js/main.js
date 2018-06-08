@@ -7,7 +7,7 @@ function go_kwadracik() {
   grafika();
   rusz_mnie();
   boom();
-
+  takise();
 }
 //grafika na starcie
 function grafika(){
@@ -48,4 +48,23 @@ function boom() {
 };
 });
 }
-//ludzik
+//input po wpisaniu Geek pojawia się logo GF
+function takise() {
+  $(document).on('keydown', function (event) {
+    var key = event.which;
+    if(key == 80){
+    $("#Geek").addClass("cfel2");
+    $("#knefel1").addClass("knefel2");
+    $("#knefel1").append("GO!");
+
+  }
+});
+}
+function odczyt(){
+  fjut = $('#Geek').val();
+  if(fjut == "Geek"){
+$("#container").addClass("GF");
+}else{
+  alert('Nie tym razem, Danielu, pisz to Geek!')
+}
+}
