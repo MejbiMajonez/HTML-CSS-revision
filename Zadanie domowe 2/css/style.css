@@ -77,3 +77,10 @@
     height: 40px;
     background-color: #f00;
 }
+.ziom{
+  background-image:url("../img/blah.jpeg");
+  height:40px;
+  width:40px;
+  background-position:center center;t
+  position:absolute;
+}

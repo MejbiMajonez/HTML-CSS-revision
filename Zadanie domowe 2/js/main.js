@@ -9,11 +9,12 @@ function go_kwadracik() {
   boom();
   zmien_size();
   szybciej();
+  chlopek();
 }
 //grafika na starcie
 function grafika(){
   $('#dupa').addClass("grafika");
-  setTimeout(function schowaj(){$(".grafika").fadeOut(3000);},5000);
+  setTimeout(function schowaj(){$(".grafika").fadeOut(1000);},3000);
 
 }
 //poruszanie się kwadracika
@@ -32,9 +33,8 @@ function rusz_mnie() {
       peniz.css('left', Wiepsz);
     }else if(key == 40 && parseInt(peniz.css('top')) < 388){
       peniz.css('top', Wiepsz);
-    }
-
-  });
+  }
+});
 }
 //eksplozja
 function boom() {
@@ -85,17 +85,36 @@ function szybciej() {
   $(document).on('keydown', function (event) {
 
     var key = event.which;
-    var dupsko = $('#kwadrat');
+    var dupsko = $('.duzy_kwadrat');
 
-    if(key == 18 && parseInt(dupsko.css('left')) > 0){
+    if(key == 37 && parseInt(dupsko.css('left')) > 0){
       dupsko.css('left', '-=5px');
-    }else if(key == 18 && parseInt(dupsko.css('top')) > 0){
+    }else if(key == 38 && parseInt(dupsko.css('top')) > 0){
       dupsko.css('top', '-=5px');
-    }else if(key == 18 && parseInt(dupsko.css('left')) < 788){
+    }else if(key == 39 && parseInt(dupsko.css('left')) < 788){
       dupsko.css('left', '+=5px');
-    }else if(key == 18 && parseInt(dupsko.css('top')) < 388){
+    }else if(key == 40 && parseInt(dupsko.css('top')) < 388){
       dupsko.css('top', '+=5px');
-    }
+    }else if(key == 84){
+  $('#kwadrat').toggleClass('kwadracik ziom duzy_kwadrat ');
+}
+  });
+}
+//chlopek
+function chlopek() {
+  $(document).on('keydown', function (event) {
 
+    var key = event.which;
+    var hui = $('.ziom');
+
+    if(key == 37 && parseInt(hui.css('left')) > 0){
+      hui.css({'transform' : 'rotate('+ 0 +'deg)'});
+    }else if(key == 38 && parseInt(hui.css('top')) > 0){
+      hui.css({'transform' : 'rotate('+ 90 +'deg)'});
+    }else if(key == 39 && parseInt(hui.css('left')) < 788){
+      hui.css({'transform' : 'rotate('+ -180 +'deg)'});
+    }else if(key == 40 && parseInt(hui.css('top')) < 388){
+      hui.css({'transform' : 'rotate('+ 270 +'deg)'});
+}
   });
 }
