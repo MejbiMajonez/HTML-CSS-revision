@@ -1,0 +1,201 @@
+body {
+font-family: 'Lato', sans-serif;
+/*font-family: 'Italianno', cursive;*/
+
+}
+a{
+text-decoration:none !important;
+}
+
+.color{
+	color:#ff4 !important;
+}
+.bgcolor{
+	background-color:#ff4 !important;
+}
+.h3{
+	margin:60px 0px;
+	text-align:center;
+	position:relative;
+	z-index:1;
+}
+.h3In1{
+	font-size:36px;
+	color:#666;
+	
+}
+.h3In2{
+	font-size:80px;
+	color:#ccc;
+	font-family: 'Italianno', cursive;
+	position:absolute;
+	top:-25px;
+	left:0;
+	right:0;
+	z-index:-1;
+}
+/* START header*/
+.header{
+	height:100vh;
+	background:url('../img/bg.jpg') no-repeat center center fixed;
+	background-size:cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.headerLine1 {
+	text-align: center;
+	color:#fff;
+	font-size:64px;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #222;
+}
+.headerLine2 {
+	text-align: center;
+	font-size:22px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #222;
+	letter-spacing:2px;
+	font-weight:bold;
+	
+}
+.headerImg{
+	width:200px;
+	height:200px;
+	background:#000;
+	border-radius:50%;
+	box-shadow:0px 0px 5px 0px #222;
+	background:url('../img/1.jpg') center top no-repeat;
+	background-size:cover;
+	
+}
+/* END header*/
+/* START about */
+.aboutText{
+	text-align:center;
+	line-height:1.8;
+	color:#444;
+	font-size:16px;
+}
+.aboutText span{
+	font-size:20px;
+	font-weight:bold;
+}
+/* END about */
+/* START portfolio */
+.portfolio{
+}
+.portfolioSlider{
+	height:400px;
+	width:100%;
+	background:#000;
+	overflow:hidden;
+	
+}
+.portfolioText .vertical{
+	height:400px;
+}
+.portfolioSlider .carousel-indicators{
+	bottom:0px;
+	margin:0px;
+	padding:20px 0px;
+	background:rgba(0,0,0,0.6);
+}
+.portfolioSlider .carousel-item img {
+	height:400px;
+	max-width:100%;
+	margin:0px auto;
+}
+/* END portfolio */
+
+/* START szymon */
+.szymon {
+	margin-top:60px;
+	background:url('../img/bg.jpg') no-repeat center center fixed;
+	background-size:cover;
+	
+}
+.szymonText {
+	padding:150px 0px;
+	text-align:center;
+	font-size:32px;
+	color:#fff;
+	text-shadow:0px 0px 3px #222;
+	font-weight:bold;
+}
+/* END szymon */
+/* start kontakt */
+.kontakt{
+	padding:30px 0px;
+}
+.kontaktIkona {
+	text-align:center;
+	display:block;
+}
+.kontaktIkona i{
+	font-size:62px;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+.kontaktIkona:hover i{
+	margin-top:0px;
+	margin-bottom:20px;
+}
+.kontaktIkonaLine1{
+	font-size:22px;
+	font-weight:bold;
+}
+.kontaktIkonaLine2{
+	font-size:15px;
+	text-transform:uppercase;
+	color:#888 !important;
+}
+.kontakt_box_all1{
+	padding:30px 0px;
+	
+}
+.kontakt_box_all1 input, .kontakt_box_all1 textarea{
+	width:100%;
+	border:0px;
+	border-bottom:1px solid #ccc;
+	outline:none !important;
+	margin-top:30px;
+	
+}
+.error{
+	text-align:center;
+	color:#F00;
+	letter-spacing:2px;
+	font-weight:bold;
+	font-size:14px;
+	display:none;
+}
+.contact_btn{
+	margin:30px auto;
+	width:300px;
+	padding:10px 0px;
+	text-align:center;
+	cursor:pointer;
+}
+.kontakt_box_all2{
+	text-align:center;
+	padding:200px 0px;
+	color:#666;
+	display:none;
+}
+/* stop kontakt */
+/* start footer */
+.footer {
+	margin-top:30px;
+	padding:30px 0px;
+	text-align:center;
+	border-top:1px dashed #ddd;
+	color:#444;
+	font-size:12px;
+	letter-spacing:2px;
+}
+
+
+/* stop footer */
