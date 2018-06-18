@@ -1,0 +1,17 @@
+
+.displaye{
+  height:400px;
+  width:400px;
+  border:1px solid #333;
+  display:flex;
+  flex-wrap:wrap;
+}
+.gridy{
+}
+.items{
+  height:40px;
+  border:1px solid #333;
+  width:40px;
+  background:#f00;
+
+}
